@@ -10,6 +10,7 @@
  *= require bootstrap_and_overrides
  *= require_self
  *= require locations.css.scss
+
  */
 
 $black: #151515;
@@ -21,7 +22,7 @@ html{
 }
 
 #header{
-	color:yellow;
+	color:blue;
 	background-color: $black;
 	height: 2em;
 	font-size: 2em;
@@ -36,6 +37,12 @@ html{
 	border-radius: 2em;
 	width: 50%;
 }
+#map-container{
+	height: 50%;
+	width: 50%;
+}
+
+
 
 a{
 	color: $black;
@@ -49,4 +56,3 @@ a{
 		color: $black;
 	}
 }
-
