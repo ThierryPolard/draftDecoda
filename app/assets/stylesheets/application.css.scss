@@ -38,9 +38,31 @@ html{
 	width: 50%;
 }
 #map-container{
-	height: 50%;
-	width: 50%;
+	height:1000px;
+	width: 800px;
 }
+
+#graph{
+	height:600px;
+	width: 1200px;
+}
+
+
+/*classe clearfix  */
+#clearfix {
+  *zoom: 1;
+}
+#clearfix:before,
+#clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#clearfix:after {
+  clear: both;
+}
+
+
 
 
 

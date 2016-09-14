@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html class=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:black;text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}</style><link href="Decoda_files/css_004.css" rel="stylesheet" type="text/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style>
+    <!-- <meta charset="utf-8"> -->
+    <title>Decoda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Basic Global javascript and css-->
+    <link href="Decoda_files/bootstrap_and_overrides.css" media="all" rel="stylesheet">
+<link href="Decoda_files/application.css" media="all" rel="stylesheet">
+<link href="Decoda_files/locations.css" media="all" rel="stylesheet">
+    <script style="" src="Decoda_files/analytics.js" async=""></script><script src="Decoda_files/main.html"></script>
+    <link href="Decoda_files/theme.css" media="screen" rel="stylesheet">
+
+
+
+
+
+    <!--<link rel='stylesheet' id='pe_theme_compressed-css'  href='http://weareants.fr/wp-content/themes/visia/theme/compressed/theme.min.css?ver=1444283240' type='text/css' media='all' /> -->
+    <!--<link rel='stylesheet' id='pe_theme_init-css'  href='http://weareants.fr/wp-content/themes/visia/style.css?ver=1444283240' type='text/css' media='all' />-->
+
+     <script type="text/javascript" src="Decoda_files/wp-emoji-release.js"></script><script src="Decoda_files/common.js" charset="UTF-8" type="text/javascript"></script><script src="Decoda_files/map.js" charset="UTF-8" type="text/javascript"></script><style></style><script src="Decoda_files/util.js" charset="UTF-8" type="text/javascript"></script><script src="Decoda_files/onion.js" charset="UTF-8" type="text/javascript"></script><script src="Decoda_files/stats.js" charset="UTF-8" type="text/javascript"></script><script src="Decoda_files/controls.js" charset="UTF-8" type="text/javascript"></script><script src="Decoda_files/ViewportInfoService.GetViewportInfo" charset="UTF-8" type="text/javascript"></script></head><body id="locations-drifter" class="page page-id-591 page-parent page-template page-template-page_home page-template-page_home-php">leaflet css and java script
+    <link data-turbolinks-track="true" href="Decoda_files/leaflet_002.css" media="all" rel="stylesheet">
+    <script data-turbolinks-track="true" src="Decoda_files/leaflet_002.js"></script>
+
+
+    <link href="Decoda_files/font-awesome.css" media="screen" rel="stylesheet">
+
+    <!-- fontmarker and integration to leaflet -->
+    <link href="Decoda_files/font-awesome.css" media="screen" rel="stylesheet">
+    <link rel="stylesheet" href="Decoda_files/leaflet.css">
+    <link href="Decoda_files/css.css" rel="stylesheet" type="text/css">
+    <script src="Decoda_files/leaflet.js"></script>
+    <script href="/application-11e91eca62504b11c24a0e36acbb5534.css"></script>
+
+
+    <!-- integrating google map and leaflet -->
+    <script data-turbolinks-track="true" src="Decoda_files/leaflet-google.js"></script>
+    <script data-turbolinks-track="true" src="Decoda_files/js"></script>
+    <link rel="stylesheet" href="Decoda_files/css_002.css">
+    <!-- <meta content="authenticity_token" name="csrf-param" />
+<meta content="q5vmHxFi7uYVIeqGj3g3IQbYai/+t10Dj5YXRY9QKec=" name="csrf-token" /> -->
+
+
+    <!-- head pour le graph -->
+    <script src="Decoda_files/highcharts.js"></script>
+    <script src="Decoda_files/exporting.js"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="http://veille-eau.com/favicon.ico">
+
+
+  <!-- head récupéré tel quel chez ANts -->
+
+  <!-- Basic Global javascript and css-->
+
+  <!--  <script href="/application-11e91eca62504b11c24a0e36acbb5534.css" rel="stylesheet"> </script>-->
+  <!--  <script href="/application-7bb7ee6f48327912a4e3f3506890746c.js" type="text/javascript"> </script>-->
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <meta name="format-detection" content="telephone=no">
+
+      <!--[if lt IE 9]>
+      <script type="text/javascript">/*@cc_on'abbr article aside audio canvas details figcaption figure footer header hgroup mark meter nav output progress section summary subline time video'.replace(/\w+/g,function(n){document.createElement(n)})@*/</script>
+      <![endif]-->
+      <script type="text/javascript">if(Function('/*@cc_on return document.documentMode===10@*/')()){document.documentElement.className+=' ie10';}</script>
+      <script type="text/javascript">(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+      <link rel="pingback" href="http://weareants.fr/xmlrpc.php">
+
+
+
+      <link rel="stylesheet" type="text/css" href="Decoda_files/css_003.css">
+      <!-- wp_head() -->
+      <link rel="alternate" type="application/rss+xml" title="We Are Ants » Feed" href="http://weareants.fr/feed/">
+      <link rel="alternate" type="application/rss+xml" title="We Are Ants » Comments Feed" href="http://weareants.fr/comments/feed/">
+      <link rel="alternate" type="application/rss+xml" title="We Are Ants » HOMEFR Comments Feed" href="http://weareants.fr/homefr/feed/">
+        <script type="text/javascript">
+            window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/weareants.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.4"}};
+            !function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+        </script>
+
+        <style type="text/css">
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+</style>
+
+<!--
+<link rel='stylesheet' id='pe_theme_compressed-css'  href='http://weareants.fr/wp-content/themes/visia/theme/compressed/theme.min.css?ver=1444283240' type='text/css' media='all' />
+<link rel='stylesheet' id='pe_theme_init-css'  href='http://weareants.fr/wp-content/themes/visia/style.css?ver=1444283240' type='text/css' media='all' />
+-->
+<script type="text/javascript" src="Decoda_files/jquery.js"></script>
+<script type="text/javascript" src="Decoda_files/jquery-migrate.js"></script>
+<link rel="https://api.w.org/" href="http://weareants.fr/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://weareants.fr/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://weareants.fr/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.4.4">
+<link rel="canonical" href="http://weareants.fr/homefr/">
+<link rel="shortlink" href="http://weareants.fr/?p=591">
+<link rel="alternate" type="application/json+oembed" href="http://weareants.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fweareants.fr%2Fhomefr%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://weareants.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fweareants.fr%2Fhomefr%2F&amp;format=xml">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+
+
+<style type="text/css">body,.form-field span input,.form-field span textarea,.form-click input{font-family:'Open Sans';}</style><style type="text/css">
+
+#nos-references .id-bx-pager li,
+
+#clients .id-bx-pager li{
+width: 20%;
+}
+
+#partners ul{
+  display: flex;
+}
+
+#partners li {
+  flex-grow: 1;
+}
+
+#partenaires ul{
+  display: flex;
+}
+
+#partenaires li {
+  flex-grow: 1;
+}
+
+.fields li {
+ margin: 1rem 0;
+}
+
+.fields li div {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+}
+
+.fields li div::before {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: -2rem;
+  top: 0rem;
+  content: '';
+  background-size: cover;
+}
+
+#git:before{
+content:"";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2000px-Git_icon.svg.png");
+}
+
+
+#github:before{
+  background-image: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
+}
+
+#html:before{
+  background-image: url("https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png");
+}
+
+#css:before{
+  background-image: url("http://www.logotypes101.com/logos/194/830812341256B99B32E1A9F242BB9F5F/css3logo.png");
+}
+
+#js:before{
+  background-image: url("http://i.stack.imgur.com/Mmww2.png");
+}
+
+#react:before{
+  background-image: url("http://daynin.github.io/clojurescript-presentation/img/react-logo.png");
+}
+
+#node:before{
+  background-image: url("https://nodeblog.files.wordpress.com/2011/07/nodejs.png");
+  width: 4.2rem;
+  left: -4.6rem;
+}
+
+#scikit:before{
+  background-image: url("https://pbs.twimg.com/profile_images/1105548722/scikit-learn-logo.png");
+  width: 1.5rem;
+  height: 1.5rem;
+  left: -2.6rem;
+}
+
+#spark:before{
+  background-image: url("http://web.cs.ucla.edu/~spencertung/CS239/spark-logo.png");
+  width: 3rem;
+  left: -3.6rem;
+}
+
+#scala:before{
+  background-image: url("http://www.scala-lang.org/resources/img/smooth-spiral.png");
+  width: 1rem;
+  left: -2.6rem;
+}
+
+#ansible:before{
+  background-image: url("https://avatars3.githubusercontent.com/u/1507452?v=3&s=200");
+  width: 1.5rem;
+  left: -2.6rem;
+}
+
+#arduino:before{
+  background-image: url("https://store.arduino.cc/includes/images/stickers_logo_text.png");
+  width: 1.5rem;
+  left: -2.6rem;
+}
+
+#raspberry:before{
+  background-image: url("https://www.raspberrypi.org/wp-content/uploads/2011/10/Raspi-PGB001.png");
+  width: 1.5rem;
+  left: -2.6rem;
+}
+
+
+.tag-line{
+  font-size: 1.2rem;
+}
+
+.contact-us {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.contact-us h4{
+  margin:0;
+  font-size: 1.4rem;
+}
+
+.contact-us .icon-down-bold:before{
+  font-size: 2rem;
+}
+
+.alert{
+text-align: center;
+margin-top: 0px;
+}
+
+.fields {
+  display: flex;
+}
+
+.fields section {
+  flex-grow: 1;
+  width: 25%;
+  font-size: 1rem;
+}
+
+.team-list {
+  padding-top: 0;
+}
+
+.sub-heading{
+  max-width: none;
+}
+
+.ants-content{
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.training-course{
+  margin: 48px auto;
+}
+
+
+@media (max-width: 500px){
+  .mentorship{
+      margin: 1.5rem 0;
+  }
+
+  .fields {
+      display: flex;
+      flex-direction: column;
+  }
+  .fields section {
+      margin: 1.5rem 0;
+      width: auto;
+  }
+
+  #partners ul{
+      flex-direction: column;
+      width: 50%;
+      margin: 0 auto;
+  }
+
+  #partners div:nth-child(3){
+      margin: 0;
+  }
+
+}
+
+
+#training{
+  margin-top: 30px;
+}
+
+#services .call-to-action li {
+  margin: 1rem 0;
+}
+
+ul.icons{
+  float: none;
+}</style><script type="text/javascript">  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-73037209-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!--<stylesheet_link_tag "main" %>-->
+
+
+
+
+  <!-- fin de head récupéré tel quel chez ANts -->
+
+
+
+
+
+<!--<section>
+<nav id = "header" class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <div class="navbar-header">
+      <br>
+      <center> Decoda
+      <br>sondes embarquées </center>
+   </div>
+</nav>
+
+</section>-->
+
+
+<section>
+<!-- Begin Navigation -->
+<nav class="clearfix">
+
+    <!-- Logo -->
+    <!--   <div class="logo">    -->
+        <!--       <a id="top" href="http://www.le-lyre.fr/" title="LyRE"> <img src="link_to image_tag("drifter.png")" width="202" height="65" alt=""></a>-->
+          <!--         </div> -->
+
+
+<a href="http://www.le-lyre.fr/"><img alt="Lyre" src="Decoda_files/lyre.jpg" height="200" width="200"></a>
+
+    <!-- Mobile Nav Button -->
+      <!--<button type="button" class="nav-button" data-toggle="collapse" data-target=".nav-content">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>-->
+
+    <!-- Navigation Links -->
+    <div class="navigation">
+        <div class="nav-content">
+            <ul class="nav">
+                      <li><a href="http://www.suez-environnement.com//"><img alt="Suez" src="Decoda_files/suez.png" height="200" width="200"></a></li>
+                      <li><a href="http://www.keolis.com//"><img alt="Keolis" src="Decoda_files/keolis.png" height="200" width="200"></a></li>
+            <!--  <li id="menu-item-620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-620"> <a href="http://www.suez-environnement.fr/">SUEZ</a></li>-->
+            <!--  <li id="menu-item-138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-138"><a target="_blank" href="http://www.keolis.com/">KEOLIS</a></li>-->
+              </ul>
+        </div>
+    </div>
+
+</nav>
+<!-- End Navigation -->
+
+</section>
+
+<section>
+<section class="content container" id="enSavoirPlus">
+  <div class="title grid-full">
+      <h2> Pourquoi des sondes embarquées </h2>
+      <span class="border"></span>
+      <div class="sub-heading">
+        <p> la mesure permet d'évaluer la qualité d'une masse d'eau </p>
+        <ul class="call-to-action">
+          <li><a class="button" href="#carte"> la carte </a> </li>
+          <li><a class="button" href="#graph"> les graphs </a> </li>
+        </ul>
+</div></div></section>
+
+</section>
+
+<section>
+  <div class="title grid-full">
+    <h2> Vue Cartographique </h2><h2>
+       <span class="border"></span>
+</h2></div></section>
+
+
+<section id="carte">
+          <span class="border"></span>
+    <div class="map-container">
+    <div tabindex="0" style="position: relative;" class="leaflet-container leaflet-fade-anim" id="map"><div style="width: 1430px; height: 800px; background-color: rgb(229, 227, 223); overflow: hidden;" id="_GMapContainer" class="leaflet-google-layer leaflet-top leaflet-left"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: -407px; top: -276px; z-index: 1; width: 100%; will-change: transform; transform-origin: 715px 400px 0px;"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 854px; top: 333px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 854px; top: 589px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1110px; top: 333px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1110px; top: 589px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 598px; top: 333px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 598px; top: 589px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 854px; top: 77px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 854px; top: 845px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1110px; top: 77px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1110px; top: 845px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1366px; top: 333px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1366px; top: 589px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 598px; top: 77px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 598px; top: 845px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1366px; top: 77px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1366px; top: 845px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 342px; top: 333px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 342px; top: 589px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1622px; top: 333px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1622px; top: 589px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 342px; top: 77px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 342px; top: 845px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1622px; top: 77px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1622px; top: 845px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: 854px; top: 333px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_014.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 854px; top: 589px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_005.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1110px; top: 333px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_007.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1110px; top: 589px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_020.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 598px; top: 333px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_010.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 598px; top: 589px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_016.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 854px; top: 77px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 854px; top: 845px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_002.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1110px; top: 77px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_018.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1110px; top: 845px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_003.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1366px; top: 333px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_017.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1366px; top: 589px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_004.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 598px; top: 77px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_006.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 598px; top: 845px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_015.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1366px; top: 77px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_011.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1366px; top: 845px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_019.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 342px; top: 333px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_013.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 342px; top: 589px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_012.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1622px; top: 333px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_021.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1622px; top: 589px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_023.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 342px; top: 77px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_024.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 342px; top: 845px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_022.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1622px; top: 77px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_009.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1622px; top: 845px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Decoda_files/kh_008.jpeg" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%; transition-duration: 0.3s; opacity: 0; display: none;"><p class="gm-style-pbt">Use two fingers to move the map</p></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div><div style="position: absolute; left: -407px; top: -276px; z-index: 4; width: 100%; transform-origin: 715px 400px 0px;"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a title="Click to see this area on Google Maps" href="https://maps.google.com/maps?ll=43.51635,-1.524289&amp;z=18&amp;t=k&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" target="_blank" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img draggable="false" src="Decoda_files/google_white5.png" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 565px; top: 310px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Imagery ©2016 , DigitalGlobe</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img draggable="false" src="Decoda_files/mapcnt6.png" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="z-index: 1000001; position: absolute; right: 168px; bottom: 0px; width: 142px;" class="gmnoprint"><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Imagery ©2016 , DigitalGlobe</span></div></div></div><div style="position: absolute; right: 0px; bottom: 0px;" class="gmnoscreen"><div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Imagery ©2016 , DigitalGlobe</div></div><div draggable="false" style="z-index: 1000001; -moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 96px; bottom: 0px;" class="gmnoprint gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" href="https://www.google.com/intl/en-US_US/help/terms_maps.html" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div style="width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img class="gm-fullscreen-control" draggable="false" src="Decoda_files/sv5.png" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 112px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/maps/@43.5163501,-1.5242887,18z/data=%213m1%211e3%2110m1%211e1%2112b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" title="Report errors in the road map or imagery to Google" target="_new">Report a map error</a></div></div></div></div>
+	<script>
+			var map = new L.Map('map', {center: new L.LatLng(43.52408-0.36093, -1.54721+0.26494), zoom: 16});
+			//0.36093, -122.25803
+      		var googleLayer = new L.Google('SATELLITE');
+			 var adjust = L.AwesomeMarkers.icon({
+			    icon: 'fa-adjust',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var asterisk = L.AwesomeMarkers.icon({
+			    icon: 'fa-asterisk',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var down = L.AwesomeMarkers.icon({
+			    icon: 'fa-hand-o-down',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var archive = L.AwesomeMarkers.icon({
+			    icon: 'fa-archive',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var circle = L.AwesomeMarkers.icon({
+			    icon: 'fa-circle',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var cloud = L.AwesomeMarkers.icon({
+			    icon: 'fa-cloud',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var certificate = L.AwesomeMarkers.icon({
+			    icon: 'fa-certificate',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var fighter_jet = L.AwesomeMarkers.icon({
+			    icon: 'fa-fighter-jet',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var coffee = L.AwesomeMarkers.icon({
+			    icon: 'fa-coffee',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var cog = L.AwesomeMarkers.icon({
+			    icon: 'fa-cog',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var bug = L.AwesomeMarkers.icon({
+			    icon: 'fa-bug',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var beer = L.AwesomeMarkers.icon({
+			    icon: 'fa-beer',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var arrow = L.AwesomeMarkers.icon({
+			    icon: 'fa-arrow-circle-o-right',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var dot = L.AwesomeMarkers.icon({
+			    icon: 'fa-dot-circle-o',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var plus = L.AwesomeMarkers.icon({
+			    icon: 'fa-plus-circle',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var rocket = L.AwesomeMarkers.icon({
+			    icon: 'fa-rocket',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var smile = L.AwesomeMarkers.icon({
+			    icon: 'fa-smile-o',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var star = L.AwesomeMarkers.icon({
+			    icon: 'fa-star-o',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var shopping = L.AwesomeMarkers.icon({
+			    icon: 'fa-shopping-cart',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var trophy = L.AwesomeMarkers.icon({
+			    icon: 'fa-trophy',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+			 var tachometer = L.AwesomeMarkers.icon({
+			    icon: 'fa-tachometer',
+			    prefix: 'fa',
+			    markerColor:'orange'
+			  });
+					var pointList = [];
+					var indice = 0;
+					var driftersListNumber = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+					var driftersListColors = ['blue','green','red','purple','orange','blue','black','green','red','black','blue','green','red','orange','purple','blue','black','green','red','black'];
+						  map.addLayer(googleLayer);
+									var pointA = new L.LatLng(43.52408, -1.54721);
+									pointList.push(pointA);
+									var numberedIcon = L.AwesomeMarkers.icon({
+										 icon: '',
+										 prefix: 'fa',
+										 markerColor:driftersListColors[indice],
+										 html: driftersListNumber[indice]
+									});
+									L.marker([ 43.52408 , -1.54721], {icon: numberedIcon, riseOnHover:true}).addTo(map).bindPopup("<b>"+"Drifter #1"+", "+"04/12/2016 14:08:03"+". My current speed is "+"1.9"+"</b>").openPopup();
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+						indice = indice + 1;
+					var indice = 0;
+						var pointList = [];
+									var pointA = new L.LatLng(43.52408, -1.54721);
+									pointList.push(pointA);
+									var pointA = new L.LatLng(43.52412, -1.54712);
+									pointList.push(pointA);
+							var firstpolyline = new L.Polyline(pointList, {
+							color: driftersListColors[indice],
+							weight: 3,
+							opacity: 0.7,
+							smoothFactor: 1
+							});
+							firstpolyline.addTo(map);
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+						var pointList = [];
+						indice = indice + 1;
+
+			var popup = L.popup();
+			function onMapClick(e) {
+				popup
+					.setLatLng(e.latlng)
+					.setContent("You clicked the map at " + e.latlng.toString())
+					.openOn(map);
+			}
+			map.on('click', onMapClick);
+	</script><div style="transform: translate(11686px, 22908px);" class="leaflet-map-pane"><div class="leaflet-tile-pane"></div><div class="leaflet-objects-pane"><div class="leaflet-shadow-pane"><div style="margin-left: -10px; margin-top: -12px; width: 36px; height: 16px; transform: translate(-15244px, -24495px);" class="awesome-marker-shadow awesome-marker leaflet-zoom-animated"></div></div><div class="leaflet-overlay-pane"><svg viewBox="-11686 -22908 1430 800" height="800" width="1430" style="transform: translate(-11686px, -22908px);" class="leaflet-zoom-animated"><g><path d="M0 0" class="leaflet-clickable" fill="none" stroke-width="3" stroke-opacity="0.7" stroke="blue" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></div><div class="leaflet-marker-pane"><div tabindex="0" style="margin-left: -17px; margin-top: -42px; width: 35px; height: 45px; transform: translate(-15244px, -24495px); z-index: -24495;" class="awesome-marker-icon-blue awesome-marker leaflet-zoom-animated leaflet-clickable"><i class=" fa fa-  icon-white">1</i></div></div><div class="leaflet-popup-pane"><div style="opacity: 1; transform: translate(-15244px, -24495px); bottom: 25px; left: -49px;" class="leaflet-popup  leaflet-zoom-animated"><a href="#close" class="leaflet-popup-close-button">×</a><div class="leaflet-popup-content-wrapper"><div style="width: 59px;" class="leaflet-popup-content"><b>Drifter #1, 04/12/2016 14:08:03. My current speed is 1.9</b></div></div><div class="leaflet-popup-tip-container"><div class="leaflet-popup-tip"></div></div></div></div></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a title="Zoom in" href="#" class="leaflet-control-zoom-in leaflet-disabled">+</a><a title="Zoom out" href="#" class="leaflet-control-zoom-out">-</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a></div></div></div>
+</div>
+
+  </div>
+</section>
+
+
+<section>
+    <div class="graph">
+  
+<section class="content container fullwidth padded js-plotly-plot" id="graph">
+
+
+<div class="plot-container plotly"><div style="position: relative; width: 990px; height: 600px;" class="svg-container"><svg style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" height="600" width="990" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="main-svg"><defs id="defs-b3fb68"><g class="clips"><clipPath id="clipb3fb68x" class="axesclip"><rect height="600" width="830" y="0" x="80"></rect></clipPath><clipPath id="clipb3fb68y" class="axesclip"><rect height="322" width="990" y="100" x="0"></rect></clipPath><clipPath id="clipb3fb68xy" class="axesclip"><rect height="322" width="830" y="100" x="80"></rect></clipPath></g></defs><g class="draglayer"><g transform="translate(80,100)"><rect height="322" width="830" y="0" x="0" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: all;" class="drag nsewdrag cursor-ew-resize"></rect><rect height="20" width="20" y="-20" x="-20" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: all;" class="drag nwdrag cursor-w-resize"></rect><rect height="20" width="20" y="-20" x="830" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: all;" class="drag nedrag cursor-e-resize"></rect><rect height="20" width="20" y="322" x="-20" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: all;" class="drag swdrag cursor-w-resize"></rect><rect height="20" width="20" y="322" x="830" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: all;" class="drag sedrag cursor-e-resize"></rect><rect height="20" width="664" y="322.5" x="83" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: all;" class="drag ewdrag cursor-ew-resize"></rect><rect height="20" width="83" y="322.5" x="0" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: all;" class="drag wdrag cursor-w-resize"></rect><rect height="20" width="83" y="322.5" x="747" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: all;" class="drag edrag cursor-e-resize"></rect><rect height="257.6" width="20" y="32.2" x="-20.5" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: none;" class="drag nsdrag cursor-pointer"></rect><rect height="32.2" width="20" y="289.8" x="-20.5" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: none;" class="drag sdrag cursor-pointer"></rect><rect height="32.2" width="20" y="0" x="-20.5" data-subplot="xy" style="fill: transparent; stroke-width: 0; pointer-events: none;" class="drag ndrag cursor-pointer"></rect></g></g><g class="subplot xy"><rect height="322" width="830" y="100" x="80" style="stroke-width: 0; fill: rgb(255, 255, 255); fill-opacity: 1;"></rect><g transform="translate(80,100)"><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(24.51,0)" d="M0,0v322" class="xgrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(146.95,0)" d="M0,0v322" class="xgrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(269.43,0)" d="M0,0v322" class="xgrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(391.87,0)" d="M0,0v322" class="xgrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(514.34,0)" d="M0,0v322" class="xgrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(636.78,0)" d="M0,0v322" class="xgrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(759.26,0)" d="M0,0v322" class="xgrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(0,315.56)" d="M0,0h830" class="ygrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(0,218.96)" d="M0,0h830" class="ygrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(0,170.66)" d="M0,0h830" class="ygrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(0,122.36)" d="M0,0h830" class="ygrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(0,74.06)" d="M0,0h830" class="ygrid crisp"></path><path style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;" transform="translate(0,25.76)" d="M0,0h830" class="ygrid crisp"></path></g><g></g><g transform="translate(80,100)"><path style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;" transform="translate(0,267.26)" d="M0,0h830" class="yzl zl crisp"></path></g><g></g><svg viewBox="0 0 830 322" height="322" width="830" y="100" x="80" style="fill: none;" preserveAspectRatio="none"><g class="imagelayer"></g><g class="maplayer"></g><g class="barlayer"></g><g class="boxlayer"></g><g class="scatterlayer"><g style="stroke-miterlimit: 2; opacity: 1;" class="trace scatter"><path style="fill: none; stroke: rgb(31, 119, 180); stroke-opacity: 1; stroke-width: 2px;" d="M0,189.98L3.35,189.98L6.7,112.7L10.06,209.3L13.41,276.92L16.76,141.68L20.11,103.04L23.47,161L26.82,257.6L30.17,83.72L33.53,170.66L36.88,238.28L40.23,132.02L43.59,103.04L46.94,209.3L50.29,189.98L53.64,151.34L56.99,132.02L60.35,228.62L63.7,199.64L67.05,161L70.41,170.66L73.76,228.62L77.11,189.98L80.47,112.7L83.82,141.68L87.17,189.98L93.87,103.04L97.23,218.96L100.58,209.3L103.93,93.38L107.29,161L110.64,247.94L113.99,189.98L117.35,103.04L120.7,209.3L124.05,170.66L127.4,103.04L130.76,103.04L134.11,257.6L137.46,180.32L140.81,112.7L144.17,180.32L147.52,238.28L150.87,112.7L154.22,93.38L157.58,199.64L160.93,189.98L164.28,74.06L167.64,132.02L170.99,238.28L174.34,218.96L177.69,122.36L181.05,170.66L184.4,238.28L187.75,189.98L191.11,74.06L194.46,218.96L197.81,209.3L201.16,132.02L204.52,112.7L207.87,238.28L211.22,209.3L214.57,103.04L217.93,161L221.28,209.3L224.63,151.34L227.98,83.72L231.34,228.62L234.69,209.3L238.04,132.02L241.4,93.38L244.75,189.98L248.1,189.98L251.45,112.7L254.81,161L258.16,305.9L261.51,151.34L264.87,93.38L268.22,209.3L271.57,180.32L274.92,132.02L278.28,122.36L281.63,238.28L284.98,218.96L288.33,35.42L291.69,228.62L295.04,267.26L298.39,103.04L301.75,93.38L305.1,189.98L308.45,199.64L311.8,151.34L315.16,112.7L318.51,276.92L321.86,93.38L325.21,103.04L331.92,247.94L335.27,189.98L338.63,103.04L341.98,238.28L345.33,199.64L348.68,112.7L352.04,112.7L355.39,257.6L358.74,180.32L362.09,83.72L365.45,199.64L368.8,209.3L372.15,170.66L375.5,103.04L378.86,228.62L382.21,170.66L385.56,103.04L388.92,122.36L392.27,238.28L395.62,161L398.97,74.06L402.33,161L405.68,161L409.03,132.02L412.38,103.04L415.74,209.3L419.09,189.98L422.44,112.7L425.8,132.02L429.15,180.32L432.5,151.34L435.85,83.72L439.21,170.66L442.56,209.3L445.91,161L449.26,93.38L452.62,276.92L455.97,218.96L459.32,93.38L462.68,180.32L466.03,209.3L469.38,161L472.73,45.08L476.09,189.98L479.44,228.62L482.79,132.02L486.14,112.7L489.5,238.28L496.2,93.38L499.56,161L502.91,209.3L506.26,83.72L509.61,83.72L512.97,199.64L516.32,180.32L519.67,151.34L523.02,103.04L526.38,247.94L529.73,189.98L533.08,93.38L536.44,180.32L539.79,151.34L543.14,170.66L546.49,54.74L549.85,199.64L553.2,151.34L556.55,103.04L559.9,151.34L563.26,199.64L566.61,161L569.96,74.06L573.32,151.34L576.67,170.66L580.02,83.72L583.37,93.38L586.73,180.32L590.08,141.68L593.43,151.34L596.78,141.68L600.14,209.3L603.49,189.98L606.84,93.38L610.2,151.34L613.55,161L616.9,141.68L620.25,93.38L623.61,238.28L626.96,189.98L630.31,141.68L633.66,151.34L637.02,218.96L642.95,141.68L650.13,199.64L653.48,141.68L656.83,112.7L660.19,209.3L663.54,209.3L666.89,132.02L670.24,93.38L673.6,170.66L676.95,170.66L680.3,45.08L683.65,199.64L687.01,209.3L690.36,112.7L693.71,112.7L697.07,209.3L700.42,170.66L703.77,103.04L707.12,112.7L710.48,180.32L713.83,189.98L717.18,64.4L720.53,151.34L723.89,170.66L727.24,141.68L730.59,64.4L733.95,247.94L737.3,189.98L740.65,103.04L744,112.7L747.36,189.98L750.71,112.7L754.06,16.1L757.41,199.64L760.77,189.98L764.12,161L767.47,64.4L770.83,151.34L786.42,218.96L789.77,93.38L793.12,112.7L796.47,238.28L799.83,132.02L803.18,64.4L806.53,161L809.89,209.3L813.24,122.36L816.59,64.4L819.94,180.32L826.65,35.42L830,132.02" class="js-line"></path></g></g></svg><g></g><path d="M-1,322.5h832" transform="translate(80,100)" class="crisp" style="fill: none; stroke-width: 1px; stroke: rgb(0, 0, 0); stroke-opacity: 0;"></path><path stroke-width="1px" d="M-0.5,-1v323" transform="translate(80,100)" class="crisp" style="fill: none; stroke: rgb(0, 0, 0); stroke-opacity: 0;"></path><g></g><g transform="translate(80,100)"><g data-bb="86" class="xtick"><text data-bb="78" transform="translate(24.51,0)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="336" x="0" text-anchor="middle">1950</text></g><g data-bb="87" class="xtick"><text data-bb="79" transform="translate(146.95,0)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="336" x="0" text-anchor="middle">1960</text></g><g data-bb="88" class="xtick"><text data-bb="80" transform="translate(269.43,0)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="336" x="0" text-anchor="middle">1970</text></g><g data-bb="89" class="xtick"><text data-bb="81" transform="translate(391.87,0)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="336" x="0" text-anchor="middle">1980</text></g><g data-bb="90" class="xtick"><text data-bb="82" transform="translate(514.34,0)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="336" x="0" text-anchor="middle">1990</text></g><g data-bb="91" class="xtick"><text data-bb="83" transform="translate(636.78,0)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="336" x="0" text-anchor="middle">2000</text></g><g data-bb="92" class="xtick"><text data-bb="84" transform="translate(759.26,0)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="336" x="0" text-anchor="middle">2010</text></g></g><g transform="translate(80,100)"><g data-bb="94" class="ytick"><text transform="translate(0,315.56)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="6" x="-2" text-anchor="end">−5</text></g><g data-bb="95" class="ytick"><text transform="translate(0,267.26)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="6" x="-2" text-anchor="end">0</text></g><g data-bb="96" class="ytick"><text transform="translate(0,218.96)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="6" x="-2" text-anchor="end">5</text></g><g data-bb="97" class="ytick"><text transform="translate(0,170.66)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="6" x="-2" text-anchor="end">10</text></g><g data-bb="98" class="ytick"><text transform="translate(0,122.36)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="6" x="-2" text-anchor="end">15</text></g><g data-bb="99" class="ytick"><text transform="translate(0,74.06)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="6" x="-2" text-anchor="end">20</text></g><g data-bb="100" class="ytick"><text transform="translate(0,25.76)" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; visibility: visible; white-space: pre;" y="6" x="-2" text-anchor="end">25</text></g></g><g></g></g><g class="shapelayer"></g><g class="pielayer"></g><g class="glimages"></g><g class="geoimages"></g><text x="983" text-anchor="end" y="591" style="font-family: &quot;Open Sans&quot;,Arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); pointer-events: all;" class="js-plot-link-container"><tspan class="js-link-to-tool"></tspan><tspan class="js-link-spacer"></tspan><tspan class="js-sourcelinks"></tspan></text></svg><div class="gl-container"></div><div class="geo-container"></div><svg height="600" width="990" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="main-svg"><defs id="topdefs-b3fb68"></defs><g class="infolayer"><g class="g-gtitle"><text text-anchor="middle" y="50" x="495" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 17px; fill: rgb(68, 68, 68); opacity: 1; font-weight: normal; white-space: pre; visibility: visible;" data-unformatted="Concentration en oxygene dans la Garonne" class="gtitle">Concentration en oxygene dans la Garonne</text></g><g data-bb="85" class="g-xtitle"></g><g data-bb="93" class="g-ytitle"></g><g transform="translate(80,75)" style="cursor: pointer; pointer-events: all;" class="rangeselector"><g transform="translate(0,0)" class="button"><rect height="19" width="30" y="0" x="0" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(238, 238, 238); fill-opacity: 1; stroke-width: 0px;" ry="3" rx="3" shape-rendering="crispEdges" class="selector-rect"></rect><text data-bb="111" y="12.5" x="15" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre; visibility: visible;" text-anchor="middle" class="selector-text user-select-none">1m</text></g><g transform="translate(35,0)" class="button"><rect height="19" width="30" y="0" x="0" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(238, 238, 238); fill-opacity: 1; stroke-width: 0px;" ry="3" rx="3" shape-rendering="crispEdges" class="selector-rect"></rect><text data-bb="112" y="12.5" x="15" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre; visibility: visible;" text-anchor="middle" class="selector-text user-select-none">6m</text></g><g transform="translate(70,0)" class="button"><rect height="19" width="33.81666564941406" y="0" x="0" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(238, 238, 238); fill-opacity: 1; stroke-width: 0px;" ry="3" rx="3" shape-rendering="crispEdges" class="selector-rect"></rect><text data-bb="113" y="12.5" x="16.90833282470703" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre; visibility: visible;" text-anchor="middle" class="selector-text user-select-none">YTD</text></g><g transform="translate(108.81666564941406,0)" class="button"><rect height="19" width="30" y="0" x="0" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(238, 238, 238); fill-opacity: 1; stroke-width: 0px;" ry="3" rx="3" shape-rendering="crispEdges" class="selector-rect"></rect><text data-bb="114" y="12.5" x="15" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre; visibility: visible;" text-anchor="middle" class="selector-text user-select-none">1y</text></g><g transform="translate(143.81666564941406,0)" class="button"><rect height="19" width="30" y="0" x="0" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(211, 211, 211); fill-opacity: 1; stroke-width: 0px;" ry="3" rx="3" shape-rendering="crispEdges" class="selector-rect"></rect><text data-bb="115" y="12.5" x="15" style="font-family: &quot;Open Sans&quot;,verdana,arial,sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre; visibility: visible;" text-anchor="middle" class="selector-text user-select-none">all</text></g></g><g transform="translate(80,457)" pointer-events="all" data-max="830" data-min="0" class="range-slider"><rect shape-rendering="crispEdges" transform="translate(-0, -0)" width="830" height="63" stroke-width="0" stroke="#444" fill="#fff"></rect><g clip-path="url(#range-clip-path)"><defs><clipPath id="range-clip-path"><path d="M0,0 830,0 830,63 0,63 Z"></path></clipPath></defs><path opacity="1" stroke-width="1" stroke="#1f77b4" fill="none" d="M0,37.17Q3.35,37.17 3.351331245171617,37.17C3.35,37.17 6.7,22.05 6.704059460432926,22.050000000000004C6.7,22.05 10.06,40.95 10.058184645783927,40.95C10.06,40.95 13.41,54.18 13.410912861045237,54.18C13.41,54.18 16.76,27.72 16.762244106216855,27.720000000000002C16.76,27.72 20.11,20.16 20.114972321478163,20.16000000000001C20.11,20.16 23.47,31.5 23.469097506829165,31.500000000000007C23.47,31.5 26.82,50.4 26.821825722090473,50.400000000000006C26.82,50.4 30.17,16.38 30.17315696726209,16.380000000000006C30.17,16.38 33.53,33.39 33.525885182523396,33.39C33.53,33.39 36.88,46.62 36.8800103678744,46.62C36.88,46.62 40.23,25.83 40.232738583135706,25.83000000000001C40.23,25.83 43.59,20.16 43.58546679839702,20.16000000000001C43.59,20.16 46.94,40.95 46.93819501365833,40.95C46.94,40.95 50.29,37.17 50.29092322891964,37.17C50.29,37.17 53.64,29.61 53.64225447409125,29.610000000000007C53.64,29.61 56.99,25.83 56.99498268935256,25.83000000000001C56.99,25.83 60.35,44.73 60.34910787470356,44.73C60.35,44.73 63.7,39.06 63.70183608996487,39.06000000000001C63.7,39.06 67.05,31.5 67.0531673351365,31.500000000000007C67.05,31.5 70.41,33.39 70.40729252048749,33.39C70.41,33.39 73.76,44.73 73.7600207357488,44.73C73.76,44.73 77.11,37.17 77.1127489510101,37.17C77.11,37.17 80.47,22.05 80.46547716627141,22.050000000000004C80.47,22.05 83.82,27.72 83.81820538153274,27.720000000000002C83.82,27.72 87.17,37.17 87.17093359679404,37.17C87.17,37.17 90.52,27.72 90.52226484196565,27.720000000000002C90.52,27.72 93.87,20.16 93.87499305722696,20.16000000000001C93.87,20.16 97.23,42.84 97.22911824257797,42.84C97.23,42.84 100.58,40.95 100.58184645783928,40.95C100.58,40.95 103.93,18.27 103.9331777030109,18.27000000000001C103.93,18.27 107.29,31.5 107.28730288836189,31.500000000000007C107.29,31.5 110.64,48.51 110.6400311036232,48.51C110.64,48.51 113.99,37.17 113.99275931888451,37.17C113.99,37.17 117.35,20.16 117.34548753414582,20.16000000000001C117.35,20.16 120.7,40.95 120.69821574940713,40.95C120.7,40.95 124.05,33.39 124.05094396466843,33.39C124.05,33.39 127.4,20.16 127.40367217992974,20.16000000000001C127.4,20.16 130.76,20.16 130.75640039519106,20.16000000000001C130.76,20.16 134.11,50.4 134.10912861045236,50.400000000000006C134.11,50.4 137.46,35.28 137.46185682571368,35.28C137.46,35.28 140.81,22.05 140.8131880708853,22.050000000000004C140.81,22.05 144.17,35.28 144.1673132562363,35.28C144.17,35.28 147.52,46.62 147.5200414714976,46.62C147.52,46.62 150.87,22.05 150.8713727166692,22.050000000000004C150.87,22.05 154.22,18.27 154.22410093193054,18.27000000000001C154.22,18.27 157.58,39.06 157.57822611728153,39.06000000000001C157.58,39.06 160.93,37.17 160.93095433254283,37.17C160.93,37.17 164.28,14.49 164.28228557771445,14.490000000000006C164.28,14.49 167.64,25.83 167.63501379297577,25.83000000000001C167.64,25.83 170.99,46.62 170.98913897832676,46.62C170.99,46.62 174.34,42.84 174.3418671935881,42.84C174.34,42.84 177.69,23.94 177.69459540884938,23.94000000000001C177.69,23.94 181.05,33.39 181.0473236241107,33.39C181.05,33.39 184.4,46.62 184.400051839372,46.62C184.4,46.62 187.75,37.17 187.75278005463332,37.17C187.75,37.17 191.11,14.49 191.1055082698946,14.490000000000006C191.11,14.49 194.46,42.84 194.45823648515594,42.84C194.46,42.84 197.81,40.95 197.81096470041723,40.95C197.81,40.95 201.16,25.83 201.16229594558885,25.83000000000001C201.16,25.83 204.52,22.05 204.51502416085017,22.050000000000004C204.52,22.05 207.87,46.62 207.86914934620117,46.62C207.87,46.62 211.22,40.95 211.22187756146246,40.95C211.22,40.95 214.57,20.16 214.57460577672379,20.16000000000001C214.57,20.16 217.93,31.5 217.9273339919851,31.500000000000007C217.93,31.5 221.28,40.95 221.2800622072464,40.95C221.28,40.95 224.63,29.61 224.63139345241802,29.610000000000007C224.63,29.61 227.98,16.38 227.98412166767932,16.380000000000006C227.98,16.38 231.34,44.73 231.33824685303034,44.73C231.34,44.73 234.69,40.95 234.69097506829164,40.95C234.69,40.95 238.04,25.83 238.04230631346326,25.83000000000001C238.04,25.83 241.4,18.27 241.39503452872458,18.27000000000001C241.4,18.27 244.75,37.17 244.74915971407557,37.17C244.75,37.17 248.1,37.17 248.1004909592472,37.17C248.1,37.17 251.45,22.05 251.4532191745085,22.050000000000004C251.45,22.05 254.81,31.5 254.8059473897698,31.500000000000007C254.81,31.5 258.16,59.85 258.1600725751208,59.85C258.16,59.85 261.51,29.61 261.51280079038213,29.610000000000007C261.51,29.61 264.87,18.27 264.8655290056434,18.27000000000001C264.87,18.27 268.22,40.95 268.2182572209047,40.95C268.22,40.95 271.57,35.28 271.57098543616604,35.28C271.57,35.28 274.92,25.83 274.92371365142736,25.83000000000001C274.92,25.83 278.28,23.94 278.2764418666887,23.94000000000001C278.28,23.94 281.63,46.62 281.62917008194995,46.62C281.63,46.62 284.98,42.84 284.9818982972113,42.84C284.98,42.84 288.33,6.93 288.3346265124726,6.930000000000006C288.33,6.93 291.69,44.73 291.6873547277339,44.73C291.69,44.73 295.04,52.29 295.0400829429952,52.290000000000006C295.04,52.29 298.39,20.16 298.3928111582565,20.16000000000001C298.39,20.16 301.75,18.27 301.74553937351783,18.27000000000001C301.75,18.27 305.1,37.17 305.09826758877915,37.17C305.1,37.17 308.45,39.06 308.4509958040404,39.06000000000001C308.45,39.06 311.8,29.61 311.80372401930174,29.610000000000007C311.8,29.61 315.16,22.05 315.15645223456306,22.050000000000004C315.16,22.05 318.51,54.18 318.5091804498244,54.18C318.51,54.18 321.86,18.27 321.86190866508565,18.27000000000001C321.86,18.27 325.21,20.16 325.214636880347,20.16000000000001C325.21,20.16 328.57,35.28 328.5673650956083,35.28C328.57,35.28 331.92,48.51 331.9200933108696,48.51C331.92,48.51 335.27,37.17 335.27282152613094,37.17C335.27,37.17 338.63,20.16 338.6255497413922,20.16000000000001C338.63,20.16 341.98,46.62 341.9782779566535,46.62C341.98,46.62 345.33,39.06 345.33100617191485,39.06000000000001C345.33,39.06 348.68,22.05 348.68233741708644,22.050000000000004C348.68,22.05 352.04,22.05 352.03646260243744,22.050000000000004C352.04,22.05 355.39,50.4 355.38919081769876,50.400000000000006C355.39,50.4 358.74,35.28 358.7405220628704,35.28C358.74,35.28 362.09,16.38 362.0932502781317,16.380000000000006C362.09,16.38 365.45,39.06 365.4473754634827,39.06000000000001C365.45,39.06 368.8,40.95 368.800103678744,40.95C368.8,40.95 372.15,33.39 372.15143492391564,33.39C372.15,33.39 375.5,20.16 375.5041631391769,20.16000000000001C375.5,20.16 378.86,44.73 378.85828832452796,44.73C378.86,44.73 382.21,33.39 382.2110165397892,33.39C382.21,33.39 385.56,20.16 385.5623477849609,20.16000000000001C385.56,20.16 388.92,23.94 388.9164729703119,23.94000000000001C388.92,23.94 392.27,46.62 392.2692011855732,46.62C392.27,46.62 395.62,31.5 395.6205324307448,31.500000000000007C395.62,31.5 398.97,14.49 398.9732606460061,14.490000000000006C398.97,14.49 402.33,31.5 402.3273858313571,31.500000000000007C402.33,31.5 405.68,31.5 405.6801140466184,31.500000000000007C405.68,31.5 409.03,25.83 409.03144529179,25.83000000000001C409.03,25.83 412.38,20.16 412.38417350705134,20.16000000000001C412.38,20.16 415.74,40.95 415.73829869240234,40.95C415.74,40.95 419.09,37.17 419.09102690766366,37.17C419.09,37.17 422.44,22.05 422.44235815283525,22.050000000000004C422.44,22.05 425.8,25.83 425.79648333818625,25.83000000000001C425.8,25.83 429.15,35.28 429.14921155344757,35.28C429.15,35.28 432.5,29.61 432.50054279861916,29.610000000000007C432.5,29.61 435.85,16.38 435.8532710138805,16.380000000000006C435.85,16.38 439.21,33.39 439.2073961992315,33.39C439.21,33.39 442.56,40.95 442.5601244144928,40.95C442.56,40.95 445.91,31.5 445.9114556596644,31.500000000000007C445.91,31.5 449.26,18.27 449.2641838749257,18.27000000000001C449.26,18.27 452.62,54.18 452.6183090602767,54.18C452.62,54.18 455.97,42.84 455.97103727553804,42.84C455.97,42.84 459.32,18.27 459.3223685207097,18.27000000000001C459.32,18.27 462.68,35.28 462.6764937060607,35.28C462.68,35.28 466.03,40.95 466.02922192132195,40.95C466.03,40.95 469.38,31.5 469.3805531664936,31.500000000000007C469.38,31.5 472.73,8.82 472.7332813817549,8.820000000000007C472.73,8.82 476.09,37.17 476.0874065671059,37.17C476.09,37.17 479.44,44.73 479.4401347823672,44.73C479.44,44.73 482.79,25.83 482.79146602753883,25.83000000000001C482.79,25.83 486.14,22.05 486.14419424280015,22.050000000000004C486.14,22.05 489.5,46.62 489.49831942815115,46.62C489.5,46.62 492.85,33.39 492.84965067332274,33.39C492.85,33.39 496.2,18.27 496.20237888858406,18.27000000000001C496.2,18.27 499.56,31.5 499.55650407393506,31.500000000000007C499.56,31.5 502.91,40.95 502.9092322891964,40.95C502.91,40.95 506.26,16.38 506.260563534368,16.380000000000006C506.26,16.38 509.61,16.38 509.6132917496293,16.380000000000006C509.61,16.38 512.97,39.06 512.9674169349803,39.06000000000001C512.97,39.06 516.32,35.28 516.3201451502416,35.28C516.32,35.28 519.67,29.61 519.6714763954133,29.610000000000007C519.67,29.61 523.02,20.16 523.0242046106746,20.16000000000001C523.02,20.16 526.38,48.51 526.3783297960256,48.51C526.38,48.51 529.73,37.17 529.7296610411971,37.17C529.73,37.17 533.08,18.27 533.0823892564584,18.27000000000001C533.08,18.27 536.44,35.28 536.4365144418094,35.28C536.44,35.28 539.79,29.61 539.7892426570708,29.610000000000007C539.79,29.61 543.14,33.39 543.1405739022424,33.39C543.14,33.39 546.49,10.71 546.4933021175037,10.71000000000001C546.49,10.71 549.85,39.06 549.8474273028547,39.06000000000001C549.85,39.06 553.2,29.61 553.200155518116,29.610000000000007C553.2,29.61 556.55,20.16 556.5514867632876,20.16000000000001C556.55,20.16 559.9,29.61 559.9042149785489,29.610000000000007C559.9,29.61 563.26,39.06 563.2583401638999,39.06000000000001C563.26,39.06 566.61,31.5 566.6096714090716,31.500000000000007C566.61,31.5 569.96,14.49 569.9623996243329,14.490000000000006C569.96,14.49 573.32,29.61 573.3165248096839,29.610000000000007C573.32,29.61 576.67,33.39 576.6692530249452,33.39C576.67,33.39 580.02,16.38 580.0205842701168,16.380000000000006C580.02,16.38 583.37,18.27 583.373312485378,18.27000000000001C583.37,18.27 586.73,35.28 586.727437670729,35.28C586.73,35.28 590.08,27.72 590.0801658859904,27.720000000000002C590.08,27.72 593.43,29.61 593.431497131162,29.610000000000007C593.43,29.61 596.78,27.72 596.7842253464233,27.720000000000002C596.78,27.72 600.14,40.95 600.1383505317743,40.95C600.14,40.95 603.49,37.17 603.489681776946,37.17C603.49,37.17 606.84,18.27 606.8424099922073,18.27000000000001C606.84,18.27 610.2,29.61 610.1965351775583,29.610000000000007C610.2,29.61 613.55,31.5 613.5492633928196,31.500000000000007C613.55,31.5 616.9,27.72 616.9005946379912,27.720000000000002C616.9,27.72 620.25,18.27 620.2533228532525,18.27000000000001C620.25,18.27 623.61,46.62 623.6074480386035,46.62C623.61,46.62 626.96,37.17 626.9601762538648,37.17C626.96,37.17 630.31,27.72 630.3115074990365,27.720000000000002C630.31,27.72 633.66,29.61 633.6642357142978,29.610000000000007C633.66,29.61 637.02,42.84 637.0183608996488,42.84C637.02,42.84 642.95,27.72 642.9512928705716,27.720000000000002C642.95,27.72 646.77,33.39 646.7734030359694,33.39C646.77,33.39 650.13,39.06 650.1275282213204,39.06000000000001C650.13,39.06 653.48,27.72 653.478859466492,27.720000000000002C653.48,27.72 656.83,22.05 656.8315876817534,22.050000000000004C656.83,22.05 660.19,40.95 660.1857128671044,40.95C660.19,40.95 663.54,40.95 663.5384410823657,40.95C663.54,40.95 666.89,25.83 666.8897723275373,25.83000000000001C666.89,25.83 670.24,18.27 670.2425005427987,18.27000000000001C670.24,18.27 673.6,33.39 673.5966257281497,33.39C673.6,33.39 676.95,33.39 676.9479569733212,33.39C676.95,33.39 680.3,8.82 680.3006851885825,8.820000000000007C680.3,8.82 683.65,39.06 683.6548103739335,39.06000000000001C683.65,39.06 687.01,40.95 687.0075385891948,40.95C687.01,40.95 690.36,22.05 690.3588698343665,22.050000000000004C690.36,22.05 693.71,22.05 693.7115980496278,22.050000000000004C693.71,22.05 697.07,40.95 697.0657232349788,40.95C697.07,40.95 700.42,33.39 700.4184514502401,33.39C700.42,33.39 703.77,20.16 703.7697826954117,20.16000000000001C703.77,20.16 707.12,22.05 707.122510910673,22.050000000000004C707.12,22.05 710.48,35.28 710.476636096024,35.28C710.48,35.28 713.83,37.17 713.8279673411956,37.17C713.83,37.17 717.18,12.6 717.180695556457,12.600000000000012C717.18,12.6 720.53,29.61 720.534820741808,29.610000000000007C720.53,29.61 723.89,33.39 723.8875489570693,33.39C723.89,33.39 727.24,27.72 727.2388802022409,27.720000000000002C727.24,27.72 730.59,12.6 730.5916084175021,12.600000000000012C730.59,12.6 733.95,48.51 733.9457336028532,48.51C733.95,48.51 737.3,37.17 737.2984618181144,37.17C737.3,37.17 740.65,20.16 740.6497930632861,20.16000000000001C740.65,20.16 744,22.05 744.0025212785474,22.050000000000004C744,22.05 747.36,37.17 747.3566464638984,37.17C747.36,37.17 750.71,22.05 750.7079777090701,22.050000000000004C750.71,22.05 754.06,3.15 754.0607059243314,3.1500000000000097C754.06,3.15 757.41,39.06 757.4148311096824,39.06000000000001C757.41,39.06 760.77,37.17 760.7675593249437,37.17C760.77,37.17 764.12,31.5 764.1188905701152,31.500000000000007C764.12,31.5 767.47,12.6 767.4716187853766,12.600000000000012C767.47,12.6 770.83,29.61 770.8257439707276,29.610000000000007C770.83,29.61 786.42,42.84 786.4159301716927,42.84C786.42,42.84 789.77,18.27 789.7672614168642,18.27000000000001C789.77,18.27 793.12,22.05 793.1199896321256,22.050000000000004C793.12,22.05 796.47,46.62 796.4741148174766,46.62C796.47,46.62 799.83,25.83 799.8254460626482,25.83000000000001C799.83,25.83 803.18,12.6 803.1781742779095,12.600000000000012C803.18,12.6 806.53,31.5 806.5322994632605,31.500000000000007C806.53,31.5 809.89,40.95 809.8850276785219,40.95C809.89,40.95 813.24,23.94 813.2363589236935,23.94000000000001C813.24,23.94 816.59,12.6 816.5890871389547,12.600000000000012C816.59,12.6 819.94,35.28 819.9432123243058,35.28C819.94,35.28 823.3,22.05 823.295940539567,22.050000000000004C823.3,22.05 826.65,6.93 826.6472717847387,6.930000000000006Q826.65,6.93 830,25.83000000000001"></path></g><rect fill="rgba(0,0,0,0.4)" height="63" width="0" x="0"></rect><rect fill="rgba(0,0,0,0.4)" height="63" width="0" x="830"></rect><rect fill="transparent" cursor="ew-resize" height="63" width="830" x="0"></rect><g transform="translate(-3)"><rect shape-rendering="crispEdges" stroke="#666" fill="white" rx="1" y="15.75" height="31.5" width="2"></rect><rect cursor="col-resize" fill="transparent" x="-6" height="63" width="10"></rect></g><g transform="translate(830)"><rect shape-rendering="crispEdges" stroke="#666" fill="white" rx="1" y="15.75" height="31.5" width="2"></rect><rect cursor="col-resize" fill="transparent" x="-2" height="63" width="10"></rect></g></g></g><g class="hoverlayer"></g></svg><div class="modebar modebar--hover"><div class="modebar-group"><a data-gravity="n" data-toggle="false" data-title="Download plot as a png" class="modebar-btn" rel="tooltip"><svg viewBox="0 0 1000 1000" width="1em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m500 450c-83 0-150-67-150-150 0-83 67-150 150-150 83 0 150 67 150 150 0 83-67 150-150 150z m400 150h-120c-16 0-34 13-39 29l-31 93c-6 15-23 28-40 28h-340c-16 0-34-13-39-28l-31-94c-6-15-23-28-40-28h-120c-55 0-100-45-100-100v-450c0-55 45-100 100-100h800c55 0 100 45 100 100v450c0 55-45 100-100 100z m-400-550c-138 0-250 112-250 250 0 138 112 250 250 250 138 0 250-112 250-250 0-138-112-250-250-250z m365 380c-19 0-35 16-35 35 0 19 16 35 35 35 19 0 35-16 35-35 0-19-16-35-35-35z"></path></svg></a><a data-gravity="n" data-toggle="false" data-title="Save and edit plot in cloud" class="modebar-btn" rel="tooltip"><svg viewBox="0 0 857.1 1000" width="0.8571em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m214-7h429v214h-429v-214z m500 0h72v500q0 8-6 21t-11 20l-157 156q-5 6-19 12t-22 5v-232q0-22-15-38t-38-16h-322q-22 0-37 16t-16 38v232h-72v-714h72v232q0 22 16 38t37 16h465q22 0 38-16t15-38v-232z m-214 518v178q0 8-5 13t-13 5h-107q-7 0-13-5t-5-13v-178q0-8 5-13t13-5h107q7 0 13 5t5 13z m357-18v-518q0-22-15-38t-38-16h-750q-23 0-38 16t-16 38v750q0 22 16 38t38 16h517q23 0 50-12t42-26l156-157q16-15 27-42t11-49z"></path></svg></a></div><div class="modebar-group"><a data-gravity="n" data-toggle="false" data-val="zoom" data-attr="dragmode" data-title="Zoom" class="modebar-btn active" rel="tooltip"><svg viewBox="0 0 1000 1000" width="1em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m1000-25l-250 251c40 63 63 138 63 218 0 224-182 406-407 406-224 0-406-182-406-406s183-406 407-406c80 0 155 22 218 62l250-250 125 125z m-812 250l0 438 437 0 0-438-437 0z m62 375l313 0 0-312-313 0 0 312z"></path></svg></a><a data-gravity="n" data-toggle="false" data-val="pan" data-attr="dragmode" data-title="Pan" class="modebar-btn" rel="tooltip"><svg viewBox="0 0 1000 1000" width="1em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m1000 350l-187 188 0-125-250 0 0 250 125 0-188 187-187-187 125 0 0-250-250 0 0 125-188-188 186-187 0 125 252 0 0-250-125 0 187-188 188 188-125 0 0 250 250 0 0-126 187 188z"></path></svg></a></div><div class="modebar-group"><a data-gravity="n" data-toggle="false" data-val="in" data-attr="zoom" data-title="Zoom in" class="modebar-btn" rel="tooltip"><svg viewBox="0 0 1000 1000" width="1em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m1 787l0-875 875 0 0 875-875 0z m687-500l-187 0 0-187-125 0 0 187-188 0 0 125 188 0 0 187 125 0 0-187 187 0 0-125z"></path></svg></a><a data-gravity="n" data-toggle="false" data-val="out" data-attr="zoom" data-title="Zoom out" class="modebar-btn" rel="tooltip"><svg viewBox="0 0 1000 1000" width="1em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m0 788l0-876 875 0 0 876-875 0z m688-500l-500 0 0 125 500 0 0-125z"></path></svg></a><a data-gravity="n" data-toggle="false" data-val="auto" data-attr="zoom" data-title="Autoscale" class="modebar-btn" rel="tooltip"><svg viewBox="0 0 1000 1000" width="1em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m250 850l-187 0-63 0 0-62 0-188 63 0 0 188 187 0 0 62z m688 0l-188 0 0-62 188 0 0-188 62 0 0 188 0 62-62 0z m-875-938l0 188-63 0 0-188 0-62 63 0 187 0 0 62-187 0z m875 188l0-188-188 0 0-62 188 0 62 0 0 62 0 188-62 0z m-125 188l-1 0-93-94-156 156 156 156 92-93 2 0 0 250-250 0 0-2 93-92-156-156-156 156 94 92 0 2-250 0 0-250 0 0 93 93 157-156-157-156-93 94 0 0 0-250 250 0 0 0-94 93 156 157 156-157-93-93 0 0 250 0 0 250z"></path></svg></a><a data-gravity="n" data-toggle="false" data-val="reset" data-attr="zoom" data-title="Reset axes" class="modebar-btn" rel="tooltip"><svg viewBox="0 0 928.6 1000" width="0.9286em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m786 296v-267q0-15-11-26t-25-10h-214v214h-143v-214h-214q-15 0-25 10t-11 26v267q0 1 0 2t0 2l321 264 321-264q1-1 1-4z m124 39l-34-41q-5-5-12-6h-2q-7 0-12 3l-386 322-386-322q-7-4-13-4-7 2-12 7l-35 41q-4 5-3 13t6 12l401 334q18 15 42 15t43-15l136-114v109q0 8 5 13t13 5h107q8 0 13-5t5-13v-227l122-102q5-5 6-12t-4-13z"></path></svg></a></div><div class="modebar-group"><a data-gravity="ne" data-toggle="false" data-val="closest" data-attr="hovermode" data-title="Show closest data on hover" class="modebar-btn" rel="tooltip"><svg viewBox="0 0 1500 1000" width="1.5em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m375 725l0 0-375-375 375-374 0-1 1125 0 0 750-1125 0z"></path></svg></a><a data-gravity="ne" data-toggle="false" data-val="x" data-attr="hovermode" data-title="Compare data on hover" class="modebar-btn active" rel="tooltip"><svg viewBox="0 0 1125 1000" width="1.125em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m187 786l0 2-187-188 188-187 0 0 937 0 0 373-938 0z m0-499l0 1-187-188 188-188 0 0 937 0 0 376-938-1z"></path></svg></a></div><div class="modebar-group"><a class="modebar-btn plotlyjsicon modebar-btn--logo" data-title="Produced with Plotly" target="_blank" href="https://plot.ly/"><svg viewBox="0 0 1542 1000" width="1.542em" height="1em"><path transform="matrix(1 0 0 -1 0 850)" d="m0-10h182v-140h-182v140z m228 146h183v-286h-183v286z m225 714h182v-1000h-182v1000z m225-285h182v-715h-182v715z m225 142h183v-857h-183v857z m231-428h182v-429h-182v429z m225-291h183v-138h-183v138z"></path></svg></a></div></div></div></div><script src="Decoda_files/plotly-1.js"></script>
+
+
+   <div class="title grid-full">
+        <h2>Graphique</h2>
+        <span class="border"></span>
+
+
+
+<script>
+
+var rawDataURL = 'https://raw.githubusercontent.com/plotly/datasets/master/2016-weather-data-seattle.csv';
+var xField = 'Date';
+var yField = 'Mean_TemperatureC';
+
+var selectorOptions = {
+    buttons: [{
+        step: 'month',
+        stepmode: 'backward',
+        count: 1,
+        label: '1m'
+    }, {
+        step: 'month',
+        stepmode: 'backward',
+        count: 6,
+        label: '6m'
+    }, {
+        step: 'year',
+        stepmode: 'todate',
+        count: 1,
+        label: 'YTD'
+    }, {
+        step: 'year',
+        stepmode: 'backward',
+        count: 1,
+        label: '1y'
+    }, {
+        step: 'all',
+    }],
+};
+
+Plotly.d3.csv(rawDataURL, function(err, rawData) {
+    if(err) throw err;
+
+    var data = prepData(rawData);
+    var layout = {
+        title: 'Concentration en oxygene dans la Garonne',
+        xaxis: {
+            rangeselector: selectorOptions,
+            rangeslider: {}
+        },
+        yaxis: {
+            fixedrange: true
+        }
+    };
+
+    Plotly.plot('graph', data, layout);
+});
+
+function prepData(rawData) {
+    var x = [];
+    var y = [];
+
+    console.log(rawData.length)
+
+    rawData.forEach(function(datum, i) {
+        if(i % 100) return;
+
+        x.push(new Date(datum[xField]));
+        y.push(datum[yField]);
+    });
+
+    return [{
+        mode: 'lines',
+        x: x,
+        y: y
+    }];
+}
+
+</script>
+
+</div>
+</section></div>
+
+</section>
+
+
+
+<section>
+  <!-- section partenaires -->
+
+
+<section class="content container fullwidth padded" id="partenaires">
+
+    <div class="title grid-full">
+        <h2>Partenaires</h2>
+        <span class="border"></span>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="shortcode clearfix">
+        <ul class="animated fade grid-full id-bx-pager ae-animation-fade" style="text-align: center;" data-appear-bottom-offset="150">
+<li><a class="active" href="http://www.bordeaux-metropole.fr/" target="_blank" data-slide-index="0"><img class="peLazyLoading pe-lazyload-inited pe-lazyload-loaded" style="opacity: 1;" src="Decoda_files/bordeaux-metropole-1-systeme-et-28-logos.jpg" alt="" data-original="http://etapes.com/system/32891/large/bordeaux-metropole-1-systeme-et-28-logos.jpg" data-original-hires="http://etapes.com/system/32891/large/bordeaux-metropole-1-systeme-et-28-logos.jpg" height="112" width="282"></a></li>
+
+<li><a class="active" href="http://www.keolis.com/" target="_blank" data-slide-index="0"><img class="peLazyLoading pe-lazyload-inited pe-lazyload-loaded" style="opacity: 1;" src="Decoda_files/1280px-Keolis_logo.png" alt="" data-original="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Keolis_logo.svg/1280px-Keolis_logo.svg.png" data-original-hires="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Keolis_logo.svg/1280px-Keolis_logo.svg.png" height="112" width="282"></a></li>
+
+
+</ul>
+    </div>
+
+
+</section>
+
+</section>
+
+<section>
+  <section>
+
+<div id="footer" class="clearfix">
+    <div class="content dark container">
+
+        <!-- Contact Links -->
+        <ul class="contact animated hatch clearfix">
+                        <li class="grid-2">
+                <p>
+                <i class="icon-phone"></i>
+                <br>
+                +33 5 XX XX XX XX           </p></li>
+                                    <li class="grid-2">
+                <a id="contact-open" href="#">
+                    <p>
+                        <i class="icon-mail"></i>
+                        <br>
+                    X@suez.com                 </p>
+                </a>
+            </li>
+                                    <li class="grid-2">
+                <a href="https://www.google.fr/maps/place/91+Rue+Paulin,+33000+Bordeaux/@44.8497109,-0.5896855,17z/data=%213m1%214b1%214m5%213m4%211s0xd552809f73fbbf1:0x6186ac150974aad7%218m2%213d44.8497071%214d-0.5874968?hl=fr" target="_blank">
+                    <p>
+                        <i class="icon-location"></i>
+                        <br>
+                    91, rue Paulin, 33000 Bordeaux                 </p>
+                </a>
+            </li>
+                    </ul>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Social Links -->
+        <ul class="social-links grid-full">
+            <li><a href="https://twitter.com/le_lyre" target="_blank" title="Twitter"><span class="icon-circle large"><i class="icon-twitter large"></i></span>
+            </a></li><li><a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+            <span class="icon-circle large"><i class="icon-linkedin large"></i></span></a></li>     </ul>
+
+        <!-- Copyright Info -->
+        <div class="copyright grid-full"><h6>©2016 LyRE. All Rights Reserved.<br><br>
+
+<small>
+
+</small></h6></div>
+
+    </div>
+</div></section>
+
+</section>
+
+    <!--
+<section>
+  <nav id="footer" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle btn btn-primary" data-toggle="collapse" data-target="#footer-navbar">
+          <span class="sr-only">Afficher le BatCub</span>
+        </button>
+      </div>
+      <!-- Collect the nav links for footer -->
+      <div class="collapse navbar-collapse" id="footer-navbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a class="btn btn-inverse" href="http://localhost:3000/drifter?nb=1&amp;prof=50"><img alt="Drifter" src="Decoda_files/drifter.png"></a></li>
+          <li><a class="btn btn-inverse" href="http://localhost:3000/drifter?id=1&amp;nb=1&amp;prof=150">Search</a></li>
+          <li><a class="btn btn-inverse" href="http://localhost:3000/locations">Data</a></li>
+          <li><a class="btn btn-inverse" href="http://localhost:3000/?mobile=1">Mobile Site</a></li>
+        </ul>
+        <button type="button" class="navbar-toggle btn btn-primary" data-toggle="collapse" data-target="#footer-navbar">
+           <span class="sr-only">Fermer la fenêtre</span>
+        </button>
+      </div><!-- /.navbar-collapse -->
+    <!-- /.container-fluid -->
+
+
+
+--&gt;
+
+
+
+
+
+<svg style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px;" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="js-plotly-tester"><path style="stroke-width: 0; fill: black;" d="M0,0H1V1H0Z" class="js-reference-point"></path></svg></body></html>
