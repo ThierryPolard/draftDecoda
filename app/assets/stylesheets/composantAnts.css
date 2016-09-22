@@ -1,0 +1,221 @@
+/* element récupérés sur le site Ants - a trier */
+
+
+<style type="text/css">
+
+#nos-references .id-bx-pager li,
+
+#clients .id-bx-pager li{
+width: 20%;
+}
+
+#partners ul{
+  display: flex;
+}
+
+#partners li {
+  flex-grow: 1;
+}
+
+#partenaires ul{
+  display: flex;
+}
+
+#partenaires li {
+  flex-grow: 1;
+}
+
+.fields li {
+ margin: 1rem 0;
+}
+
+.fields li div {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+}
+
+.fields li div::before {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: -2rem;
+  top: 0rem;
+  content: '';
+  background-size: cover;
+}
+
+#git:before{
+content:"";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2000px-Git_icon.svg.png");
+}
+
+
+#github:before{
+  background-image: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
+}
+
+#html:before{
+  background-image: url("https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png");
+}
+
+#css:before{
+  background-image: url("http://www.logotypes101.com/logos/194/830812341256B99B32E1A9F242BB9F5F/css3logo.png");
+}
+
+#js:before{
+  background-image: url("http://i.stack.imgur.com/Mmww2.png");
+}
+
+#react:before{
+  background-image: url("http://daynin.github.io/clojurescript-presentation/img/react-logo.png");
+}
+
+#node:before{
+  background-image: url("https://nodeblog.files.wordpress.com/2011/07/nodejs.png");
+  width: 4.2rem;
+  left: -4.6rem;
+}
+
+#scikit:before{
+  background-image: url("https://pbs.twimg.com/profile_images/1105548722/scikit-learn-logo.png");
+  width: 1.5rem;
+  height: 1.5rem;
+  left: -2.6rem;
+}
+
+#spark:before{
+  background-image: url("http://web.cs.ucla.edu/~spencertung/CS239/spark-logo.png");
+  width: 3rem;
+  left: -3.6rem;
+}
+
+#scala:before{
+  background-image: url("http://www.scala-lang.org/resources/img/smooth-spiral.png");
+  width: 1rem;
+  left: -2.6rem;
+}
+
+#ansible:before{
+  background-image: url("https://avatars3.githubusercontent.com/u/1507452?v=3&s=200");
+  width: 1.5rem;
+  left: -2.6rem;
+}
+
+#arduino:before{
+  background-image: url("https://store.arduino.cc/includes/images/stickers_logo_text.png");
+  width: 1.5rem;
+  left: -2.6rem;
+}
+
+#raspberry:before{
+  background-image: url("https://www.raspberrypi.org/wp-content/uploads/2011/10/Raspi-PGB001.png");
+  width: 1.5rem;
+  left: -2.6rem;
+}
+
+
+.tag-line{
+  font-size: 1.2rem;
+}
+
+.contact-us {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.contact-us h4{
+  margin:0;
+  font-size: 1.4rem;
+}
+
+.contact-us .icon-down-bold:before{
+  font-size: 2rem;
+}
+
+.alert{
+text-align: center;
+margin-top: 0px;
+}
+
+.fields {
+  display: flex;
+}
+
+.fields section {
+  flex-grow: 1;
+  width: 25%;
+  font-size: 1rem;
+}
+
+.team-list {
+  padding-top: 0;
+}
+
+.sub-heading{
+  max-width: none;
+}
+
+.ants-content{
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.training-course{
+  margin: 48px auto;
+}
+
+
+@media (max-width: 500px){
+  .mentorship{
+      margin: 1.5rem 0;
+  }
+
+  .fields {
+      display: flex;
+      flex-direction: column;
+  }
+  .fields section {
+      margin: 1.5rem 0;
+      width: auto;
+  }
+
+  #partners ul{
+      flex-direction: column;
+      width: 50%;
+      margin: 0 auto;
+  }
+
+  #partners div:nth-child(3){
+      margin: 0;
+  }
+
+}
+
+
+#training{
+  margin-top: 30px;
+}
+
+#services .call-to-action li {
+  margin: 1rem 0;
+}
+
+ul.icons{
+  float: none;
+}</style>
+
+
+
+
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}

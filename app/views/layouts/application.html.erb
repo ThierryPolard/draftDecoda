@@ -5,25 +5,17 @@
     <title>Decoda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
     <!-- Basic Global javascript and css-->
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "main" %>
     <%= stylesheet_link_tag "theme.min" %>
 
-
-
-
-
     <!--<link rel='stylesheet' id='pe_theme_compressed-css'  href='http://weareants.fr/wp-content/themes/visia/theme/compressed/theme.min.css?ver=1444283240' type='text/css' media='all' /> -->
     <!--<link rel='stylesheet' id='pe_theme_init-css'  href='http://weareants.fr/wp-content/themes/visia/style.css?ver=1444283240' type='text/css' media='all' />-->
 
-     leaflet css and java script
+     <!-- leaflet css and java script -->
     <%= stylesheet_link_tag href="//cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" , media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "//cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" , "data-turbolinks-track" => true %>
-
-
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" media="screen" rel="stylesheet" />
 
     <!-- fontmarker and integration to leaflet -->
@@ -33,13 +25,14 @@
     <script src="dist/leaflet.awesome-markers.js"></script>
     <script href="/application-11e91eca62504b11c24a0e36acbb5534.css"></script>
 
-
     <!-- integrating google map and leaflet -->
     <%= javascript_include_tag "//matchingnotes.com/javascripts/leaflet-google.js", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "//maps.google.com/maps/api/js?v=3.2&sensor=false", "data-turbolinks-track" => true %>
+
+    <!--<%= javascript_include_tag "//maps.google.com/maps/api/js?v=3.2&sensor=false", "data-turbolinks-track" => true %>-->
+    <script src="http://maps.google.com/maps/api/js?v=3.23"></script>
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <!-- <%= csrf_meta_tags %> -->
-
 
     <!-- head pour le graph -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -48,57 +41,38 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="http://veille-eau.com/favicon.ico" />
 
-
   <!-- head récupéré tel quel chez ANts -->
 
   <!-- Basic Global javascript and css-->
-
   <!--  <script href="/application-11e91eca62504b11c24a0e36acbb5534.css" rel="stylesheet"> </script>-->
   <!--  <script href="/application-7bb7ee6f48327912a4e3f3506890746c.js" type="text/javascript"> </script>-->
 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-      <meta name="format-detection" content="telephone=no" />
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+      <meta name="format-detection" content="telephone=no" /> -->
 
       <!--[if lt IE 9]>
       <script type="text/javascript">/*@cc_on'abbr article aside audio canvas details figcaption figure footer header hgroup mark meter nav output progress section summary subline time video'.replace(/\w+/g,function(n){document.createElement(n)})@*/</script>
       <![endif]-->
-      <script type="text/javascript">if(Function('/*@cc_on return document.documentMode===10@*/')()){document.documentElement.className+=' ie10';}</script>
+      <!-- <script type="text/javascript">if(Function('/*@cc_on return document.documentMode===10@*/')()){document.documentElement.className+=' ie10';}</script>
       <script type="text/javascript">(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-
       <link rel="pingback" href="http://weareants.fr/xmlrpc.php" />
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700&amp;subset=latin,latin-ext"> -->
 
-
-
-      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700&amp;subset=latin,latin-ext">
       <!-- wp_head() -->
-      <link rel="alternate" type="application/rss+xml" title="We Are Ants &raquo; Feed" href="http://weareants.fr/feed/" />
+      <!-- <link rel="alternate" type="application/rss+xml" title="We Are Ants &raquo; Feed" href="http://weareants.fr/feed/" />
       <link rel="alternate" type="application/rss+xml" title="We Are Ants &raquo; Comments Feed" href="http://weareants.fr/comments/feed/" />
       <link rel="alternate" type="application/rss+xml" title="We Are Ants &raquo; HOMEFR Comments Feed" href="http://weareants.fr/homefr/feed/" />
         <script type="text/javascript">
             window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/weareants.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.4"}};
             !function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-        </script>
+        </script> -->
 
-        <style type="text/css">
-img.wp-smiley,
-img.emoji {
-  display: inline !important;
-  border: none !important;
-  box-shadow: none !important;
-  height: 1em !important;
-  width: 1em !important;
-  margin: 0 .07em !important;
-  vertical-align: -0.1em !important;
-  background: none !important;
-  padding: 0 !important;
-}
-</style>
 
 <!--
 <link rel='stylesheet' id='pe_theme_compressed-css'  href='http://weareants.fr/wp-content/themes/visia/theme/compressed/theme.min.css?ver=1444283240' type='text/css' media='all' />
 <link rel='stylesheet' id='pe_theme_init-css'  href='http://weareants.fr/wp-content/themes/visia/style.css?ver=1444283240' type='text/css' media='all' />
 -->
-<script type='text/javascript' src='http://weareants.fr/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<!-- <script type='text/javascript' src='http://weareants.fr/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
 <script type='text/javascript' src='http://weareants.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
 <link rel='https://api.w.org/' href='http://weareants.fr/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://weareants.fr/xmlrpc.php?rsd" />
@@ -109,218 +83,14 @@ img.emoji {
 <link rel="alternate" type="application/json+oembed" href="http://weareants.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fweareants.fr%2Fhomefr%2F" />
 <link rel="alternate" type="text/xml+oembed" href="http://weareants.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fweareants.fr%2Fhomefr%2F&#038;format=xml" />
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-
-
-
-<style type="text/css">body,.form-field span input,.form-field span textarea,.form-click input{font-family:'Open Sans';}</style><style type="text/css">
-
-#nos-references .id-bx-pager li,
-
-#clients .id-bx-pager li{
-width: 20%;
-}
-
-#partners ul{
-  display: flex;
-}
-
-#partners li {
-  flex-grow: 1;
-}
-
-#partenaires ul{
-  display: flex;
-}
-
-#partenaires li {
-  flex-grow: 1;
-}
-
-.fields li {
- margin: 1rem 0;
-}
-
-.fields li div {
-  position: relative;
-  display: inline-block;
-  width: 3rem;
-}
-
-.fields li div::before {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  left: -2rem;
-  top: 0rem;
-  content: '';
-  background-size: cover;
-}
-
-#git:before{
-content:"";
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2000px-Git_icon.svg.png");
-}
-
-
-#github:before{
-  background-image: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
-}
-
-#html:before{
-  background-image: url("https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png");
-}
-
-#css:before{
-  background-image: url("http://www.logotypes101.com/logos/194/830812341256B99B32E1A9F242BB9F5F/css3logo.png");
-}
-
-#js:before{
-  background-image: url("http://i.stack.imgur.com/Mmww2.png");
-}
-
-#react:before{
-  background-image: url("http://daynin.github.io/clojurescript-presentation/img/react-logo.png");
-}
-
-#node:before{
-  background-image: url("https://nodeblog.files.wordpress.com/2011/07/nodejs.png");
-  width: 4.2rem;
-  left: -4.6rem;
-}
-
-#scikit:before{
-  background-image: url("https://pbs.twimg.com/profile_images/1105548722/scikit-learn-logo.png");
-  width: 1.5rem;
-  height: 1.5rem;
-  left: -2.6rem;
-}
-
-#spark:before{
-  background-image: url("http://web.cs.ucla.edu/~spencertung/CS239/spark-logo.png");
-  width: 3rem;
-  left: -3.6rem;
-}
-
-#scala:before{
-  background-image: url("http://www.scala-lang.org/resources/img/smooth-spiral.png");
-  width: 1rem;
-  left: -2.6rem;
-}
-
-#ansible:before{
-  background-image: url("https://avatars3.githubusercontent.com/u/1507452?v=3&s=200");
-  width: 1.5rem;
-  left: -2.6rem;
-}
-
-#arduino:before{
-  background-image: url("https://store.arduino.cc/includes/images/stickers_logo_text.png");
-  width: 1.5rem;
-  left: -2.6rem;
-}
-
-#raspberry:before{
-  background-image: url("https://www.raspberrypi.org/wp-content/uploads/2011/10/Raspi-PGB001.png");
-  width: 1.5rem;
-  left: -2.6rem;
-}
-
-
-.tag-line{
-  font-size: 1.2rem;
-}
-
-.contact-us {
-  margin-top: 2rem;
-  font-size: 1.3rem;
-}
-.contact-us h4{
-  margin:0;
-  font-size: 1.4rem;
-}
-
-.contact-us .icon-down-bold:before{
-  font-size: 2rem;
-}
-
-.alert{
-text-align: center;
-margin-top: 0px;
-}
-
-.fields {
-  display: flex;
-}
-
-.fields section {
-  flex-grow: 1;
-  width: 25%;
-  font-size: 1rem;
-}
-
-.team-list {
-  padding-top: 0;
-}
-
-.sub-heading{
-  max-width: none;
-}
-
-.ants-content{
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-.training-course{
-  margin: 48px auto;
-}
-
-
-@media (max-width: 500px){
-  .mentorship{
-      margin: 1.5rem 0;
-  }
-
-  .fields {
-      display: flex;
-      flex-direction: column;
-  }
-  .fields section {
-      margin: 1.5rem 0;
-      width: auto;
-  }
-
-  #partners ul{
-      flex-direction: column;
-      width: 50%;
-      margin: 0 auto;
-  }
-
-  #partners div:nth-child(3){
-      margin: 0;
-  }
-
-}
-
-
-#training{
-  margin-top: 30px;
-}
-
-#services .call-to-action li {
-  margin: 1rem 0;
-}
-
-ul.icons{
-  float: none;
-}</style><script type="text/javascript">  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<style type="text/css">body,.form-field span input,.form-field span textarea,.form-click input{font-family:'Open Sans';}</style>
+<script type="text/javascript">  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 ga('create', 'UA-73037209-1', 'auto');
 ga('send', 'pageview');
-</script>
+</script> -->
 
 
 </head>
@@ -328,47 +98,43 @@ ga('send', 'pageview');
 
 <!--<stylesheet_link_tag "main" %>-->
 <body class="page page-id-591 page-parent page-template page-template-page_home page-template-page_home-php">
-
-
-
-  <!-- fin de head récupéré tel quel chez ANts -->
-
+<!-- fin de head récupéré tel quel chez ANts -->
 
 
 <body id="<%= params[:controller]+"-"+params[:action] %>">
+
 
 <!--<section>
 <%= render partial: "/layouts/header" %>
 </section>-->
 
-
 <section>
 <%= render partial: "/layouts/navigation" %>
 </section>
 
-<section>
-<%= render partial: "/layouts/enSavoirPlus" %>
+ <section>
+<%= render partial: "/layouts/intro" %>
 </section>
 
 <section>
-  <div class="title grid-full">
-    <h2> Vue Cartographique <h2>
-       <span class="border"></span>
+    <%= render partial: "/layouts/enSavoirPlus" %>
 </section>
 
 
-<section id="carte">
-          <span class="border"></span>
-    <div class ="map-container">
-    <%= yield %>
-  </div>
+<section class = "carte" >
+    <%= render partial: "/layouts/carte" %>
 </section>
-
 
 <section>
-    <div class ="graph">
+  <div class ="graph">
   <%= render partial: "/layouts/graph" %>
 </section>
+
+
+<section>
+  <%= render partial: "/layouts/accessData" %>
+</section>
+
 
 <section>
   <%= render partial: "/layouts/partenaires" %>
@@ -378,13 +144,13 @@ ga('send', 'pageview');
   <%= render partial: "/layouts/contact" %>
 </section>
 
-    <!--
+<!--
 <section>
   <%= render partial: "/layouts/footer" %>
 </section>
 -->
 
-
 </body>
+
 
 </html>

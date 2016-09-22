@@ -1,0 +1,39 @@
+
+<section id="accessData">
+
+<div class="sub-heading">
+        <span class="border"></span>
+    <ul class ="call-to-action">
+      <li> <%= button_to "Accès aux données", '/locations', class: "btn btn-inverse"  %></li>
+      <li> <%= link_to "Accès aux données", '/locations', class: "btn btn-inverse" %></li>
+    </ul>
+</section>
+
+<!--
+<nav role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle btn btn-primary" data-toggle="collapse" data-target="#data-navbar">
+          <span class="sr-only">Afficher le BatCub</span>
+        </button>
+      </div>-->
+      <!-- Collect the nav links for footer -->
+      <!-- <div class="collapse navbar-collapse" id="data-navbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><%= link_to image_tag("drifter.png"), drifter_path(:nb => 1, :prof => 150), class: "btn btn-inverse"%></li>
+          <li><%= link_to "Search", drifter_path(:id => 1 ,:nb => 1, :prof => 150), class: "btn btn-inverse" %></li>
+          <li><%= link_to "Data", "/locations", class: "btn btn-inverse" %></li>
+            <% if mobile_device? %>
+          <li> <%= link_to "Full Site", root_path(:mobile => 0 ), :rel => "external",class: "btn btn-inverse" %></li>
+            <% else %>
+          <li><%= link_to "Mobile Site", params.merge(:mobile => 1 ),class: "btn btn-inverse"%></li>
+            <% end %>
+        </ul>
+        <button type="button" class="navbar-toggle btn btn-primary" data-toggle="collapse" data-target="#footer-navbar">
+           <span class="sr-only">Fermer la fenêtre</span>
+        </button>
+      </div>-->
+      <!-- /.navbar-collapse -->
+    <!-- </div>-->
+
+    <!-- /.container-fluid -->

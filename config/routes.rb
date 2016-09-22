@@ -5,12 +5,15 @@ Leaflet::Application.routes.draw do
     end
   end
 
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'locations#drifter'
-   delete 'purge' => 'locations#purge'
+  # root 'locations#drifter'
+  root 'locations#index'
+  delete 'purge' => 'locations#purge'
 
 
   # Example of regular route:
