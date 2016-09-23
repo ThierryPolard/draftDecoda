@@ -12,7 +12,7 @@ Leaflet::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'locations#drifter'
-  root 'locations#index'
+  root 'locations#drifter'
   delete 'purge' => 'locations#purge'
 
 
@@ -65,9 +65,9 @@ Leaflet::Application.routes.draw do
   #     resources :products
   #   end
   post 'data' => 'locations#create'
-  get "drifter" => 'locations#drifter', :as => "drifter"
-  get "menu" => 'locations#menu', :as => "menu"
-
-  get "driftermobiles" => 'locations#driftermobiles', :as => "driftermobiles"
+  get 'drifter' => 'locations#drifter', :as => "drifter"
+  get 'menu' => 'locations#menu', :as => "menu"
+  get 'table' => "locations#index", :as => "table"
+  get 'driftermobiles' => 'locations#driftermobiles', :as => "driftermobiles"
 
 end

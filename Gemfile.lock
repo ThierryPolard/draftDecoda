@@ -197,5 +197,8 @@ DEPENDENCIES
   uglifier (>= 1.0.3)
   zip-zip
 
+RUBY VERSION
+   ruby 2.2.4p230
+
 BUNDLED WITH
-   1.11.2
+   1.13.1
